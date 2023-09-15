@@ -12,7 +12,7 @@ import { NextPage } from "next";
 
 const Home: NextPage = () => {
   const address = useAddress();
-
+  
   const { contract } = useContract(NFT_CONTRACT_ADDRESS);
 
   const { data: contractMetadata } = useContractMetadata(contract);
